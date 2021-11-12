@@ -5,12 +5,21 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
       <style>
 
-        h1 {
-            margin-top: 0.5em;
+        body {
+            padding: 5em;
         }
 
         div {
             margin-top: 1em;
+        }
+
+        div * {
+            font-family: Arial;
+            font-size: 2em;
+        }
+
+        hr {
+            margin: 3em 0;
         }
 
         h1.TitleAnimated {
@@ -26,14 +35,21 @@
    <body>
         <h1>CSS Animations</h1>
 
-        <h1>Bounce animation</h1>
+        <h2>Bounce animation</h2>
         <div class="animate__animated animate__bounce">An animated element just with css class from the Animate.css library</div>
         <div class="TitleAnimated">An animated element with style rules</div>
 
-        <h1>Animations with delay propery</h1>
+        <hr>
+
+        <h2>Animations with delay propery</h2>
         <div class="animate__animated animate__bounce animate__delay-2s">An animated element with delay equal two seconds</div>
 
-        <h1>Animations with with differents speeds</h1>
-        <div class="animate__animated animate__bounce animate__faster">Example</div>
+        <hr>
+
+        <h2>Animations with with differents speeds</h2>
+        <div class="animate__animated animate__bounce animate__slow">Animate slow</div>
+        <div class="animate__animated animate__bounce slower">Animate slower</div>
+        <div class="animate__animated animate__bounce animate__fast">Animate fast</div>
+        <div class="animate__animated animate__bounce animate__faster">Animate faster</div>
    </body>
 </html>
