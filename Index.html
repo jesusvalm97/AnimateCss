@@ -4,10 +4,36 @@
       <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
       <style>
-         
+
+        h1 {
+            margin-top: 0.5em;
+        }
+
+        div {
+            margin-top: 1em;
+        }
+
+        h1.TitleAnimated {
+            display: inline-block;
+            margin: 0 0.5rem;
+
+            animation: bounce; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 2s; /* don't forget to set a duration! */
+        }
+
       </style>
    </head>
    <body>
-    <h1 class="animate__animated animate__bounce">An animated element</h1>
+        <h1>CSS Animations</h1>
+
+        <h1>Bounce animation</h1>
+        <div class="animate__animated animate__bounce">An animated element just with css class from the Animate.css library</div>
+        <div class="TitleAnimated">An animated element with style rules</div>
+
+        <h1>Animations with delay propery</h1>
+        <div class="animate__animated animate__bounce animate__delay-2s">An animated element with delay equal two seconds</div>
+
+        <h1>Animations with with differents speeds</h1>
+        <div class="animate__animated animate__bounce animate__faster">Example</div>
    </body>
 </html>
